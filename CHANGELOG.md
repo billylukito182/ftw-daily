@@ -14,6 +14,10 @@ way to update this template, but currently, we follow a pattern:
 
 ## Upcoming version 2020-XX-XX
 
+- [fix] Use Stripe's `confirmCardPayment` function instead of deprecated `handleCardPayment` to
+  confirm PaymentIntent. In addition to the rename, the arguments passed to `handleCardPayment` are
+  sligthly different. Otherwise, these changes should not affect the behavior of the function. [#]()
+
 ## [v6.1.1] 2020-07-21
 
 - [fix] Fix config script for NodeJS v14.5.0
